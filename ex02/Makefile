@@ -4,11 +4,8 @@ RM := rm -f
 CXXFLAG := -Wall -Wextra -Werror -std=c++98
 
 SRCS := main.cpp\
-		Zombie.cpp\
-		newZombie.cpp\
-		randomChump.cpp
 
-HEADERS := Zombie.hpp\
+HEADERS := 
 
 OBJS = $(SRCS:.cpp=.o)
 

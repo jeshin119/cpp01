@@ -1,4 +1,4 @@
-NAME := zombie
+NAME := a.out
 CPP := c++
 RM := rm -f
 CXXFLAG := -Wall -Wextra -Werror -std=c++98
