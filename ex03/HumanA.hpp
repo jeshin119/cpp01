@@ -7,13 +7,12 @@
 #include <iostream>
 
 class HumanA{
-public:
-	HumanA(const std::string &paramName, Weapon &paramWeapon);
-	~HumanA();
-	void	attack();
-private:
-	HumanA();
-	Weapon	*_Weapon;
-	std::string	_name;
+	private:
+		Weapon	&_weapon;
+		std::string	_name;
+	public:
+		HumanA(const std::string &paramName, Weapon &paramWeapon);
+		~HumanA();
+		void	attack();
 };
 #endif

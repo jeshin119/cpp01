@@ -2,14 +2,14 @@
 
 Weapon::Weapon(){
 }
-Weapon::Weapon(std::string paramWeapon){
-	setType(paramWeapon);
+Weapon::Weapon(std::string type){
+	_type=type;
 }
 Weapon::~Weapon(){
 }
 const std::string&	Weapon::getType() const{
-	return (_type);
+	return (this->_type);
 }
-void	Weapon::setType(const std::string &paramType){
-	_type=paramType;
+void	Weapon::setType(const std::string &type){
+	_type=type;
 }
