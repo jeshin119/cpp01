@@ -1,9 +1,9 @@
 #include "Zombie.hpp"
 
+Zombie::Zombie(){
+}
 Zombie::Zombie(std::string paramName){
 	_name=paramName;
-}
-Zombie::Zombie(){
 }
 Zombie::~Zombie(){
 	std::cout<<_name<<" is destoryed\n";

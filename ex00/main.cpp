@@ -12,7 +12,7 @@ int main(){
 	delete newFoo;
 
 	std::cout<<"\n";
-	std::cout<<"execute randomChump"<<"\n";
+	std::cout<<"create randomChump"<<"\n";
 	randomChump("randomChump");
 	std::cout<<"\n";
 }
