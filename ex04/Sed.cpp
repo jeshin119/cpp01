@@ -31,6 +31,8 @@ void	Sed::_setOutfile(){
 void	Sed::_setString(){
 	std::cout<<"Put s1\n>> ";
 	std::getline(std::cin,_s1);
+	if (_s1.size() == 0)
+		throw (std::runtime_error("empty S1"));
 	if (std::cin.eof())
 		throw (std::runtime_error("EOF"));
 	std::cout<<"Put s2\n>> ";
