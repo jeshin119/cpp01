@@ -4,22 +4,27 @@ Harl::Harl(){}
 Harl::~Harl(){}
 
 void	Harl::complain(std::string level){
-	std::string cmp = "DEBUG,INFO,WARNING,ERROR";
+	std::string cmp[4] = {"DEBUG","INFO","WARNING","ERROR"};
 	void (Harl::*ftab[4])()={&Harl::_debug, &Harl::_info, &Harl::_warning, &Harl::_error};
-	switch (cmp.find(level)){
+	int pos;
+	for(pos=0;pos<4;pos++){
+		if (cmp[pos]==level)
+			break;
+	}
+	switch (pos){
 		case 0:
 			std::cout<<"[ DEBUG ]\n";
 			(this->*ftab[0])();
 			std::cout<<"\n";
-		case 6:
+		case 1:
 			std::cout<<"[ INFO ]\n";
 			(this->*ftab[1])();
 			std::cout<<"\n";
-		case 11:
+		case 2:
 			std::cout<<"[ WARNING ]\n";
 			(this->*ftab[2])();
 			std::cout<<"\n";
-		case 19:
+		case 3:
 			std::cout<<"[ ERROR ]\n";
 			(this->*ftab[3])();
 			std::cout<<"\n";
